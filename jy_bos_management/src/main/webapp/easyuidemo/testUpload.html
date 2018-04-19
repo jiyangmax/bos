@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>上传文件</title>
+			<script type="text/javascript" src="../js/jquery-1.8.3.js" ></script>
+		<script>
+			$(function() {
+				$("#btn").click(function(){
+					$("#myFile").trigger("click");
+				});
+			});
+			
+			function changeFile() {
+				$("#uploadForm").attr("hidden","hidden");
+				$("#myIframe").attr("hidden","hidden");
+				$("#uploadForm").submit();
+			}
+		</script>
+		
+	</head>
+
+	<body>
+
+		<input type="button" id="btn" value="一键上传" /> 
+
+		<form id="uploadForm" action="../testUpload.action" method="post" 
+			enctype="multipart/form-data"  target="myIframe2">
+			<input id="myFile" type="file" name="file3" onchange="changeFile()"/>   
+			<input type="submit" value="提交"/>
+		</form>
+			
+		<iframe id="myIframe" name="myIframe2" scrolling="auto" style="width:600px;height:500px"/>
+	
+	</body>
+
+</html>
