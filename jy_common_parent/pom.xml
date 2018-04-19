@@ -6,7 +6,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>common_parent</name>
-  <description>bos v2.0综合平台的公共父项目，用于统一依赖管理</description>
+  <description>bos v2.0综合平台的公共父项目</description>
 	<properties>
 		<spring.version>4.1.7.RELEASE</spring.version>
 		<struts2.version>2.3.24</struts2.version>
